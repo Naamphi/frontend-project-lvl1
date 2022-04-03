@@ -1,8 +1,8 @@
 name: github-linter
 
 on:
-  push:
-    branches: [ master ]
+  - push
+  - pull_request
 
 jobs:
   build:
