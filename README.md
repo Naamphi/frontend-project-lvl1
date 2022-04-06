@@ -18,3 +18,9 @@ $ brain-even
 $ brain-calc
 ```
 [![asciicast](https://asciinema.org/a/hRm2OO9mXCQpV4qSZZojfUeMW.svg)](https://asciinema.org/a/hRm2OO9mXCQpV4qSZZojfUeMW)
+
+**brain-gcd**
+```
+$ brain-gcd
+```
+[![asciicast](https://asciinema.org/a/EO2wcV9dOmftQ6DJ2dNnPl52V.svg)](https://asciinema.org/a/EO2wcV9dOmftQ6DJ2dNnPl52V)
