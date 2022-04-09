@@ -2,10 +2,10 @@
 [![Actions Status](https://github.com/Naamphi/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Naamphi/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/Naamphi/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/218d3b37f72822595d65/maintainability" /></a>
 [![github-linter](https://github.com/Naamphi/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/Naamphi/frontend-project-lvl1/actions)
-### Description
+### Описание проекта
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
 
-# Games: 
+# Игры: 
 
 Игра "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
 ```
