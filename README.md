@@ -24,3 +24,9 @@ $ brain-calc
 $ brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/EO2wcV9dOmftQ6DJ2dNnPl52V.svg)](https://asciinema.org/a/EO2wcV9dOmftQ6DJ2dNnPl52V)
+
+**brain-progression**
+```
+$ brain-progression
+```
+[![asciicast](https://asciinema.org/a/0iMhTblaWrkq0tS6uHfEUO9rW.svg)](https://asciinema.org/a/0iMhTblaWrkq0tS6uHfEUO9rW)
