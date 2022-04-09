@@ -30,3 +30,9 @@ $ brain-gcd
 $ brain-progression
 ```
 [![asciicast](https://asciinema.org/a/0iMhTblaWrkq0tS6uHfEUO9rW.svg)](https://asciinema.org/a/0iMhTblaWrkq0tS6uHfEUO9rW)
+
+**brain-prime**
+```
+$ brain-prime
+```
+[![asciicast](https://asciinema.org/a/DBoCYRaPyeWTaW5CDjhEVgRmf.svg)](https://asciinema.org/a/DBoCYRaPyeWTaW5CDjhEVgRmf)
