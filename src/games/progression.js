@@ -1,24 +1,28 @@
-import game1 from '../index.js';
+import randomNum from '../utils.js';
 
 const rules = 'What number is missing in the progression?';
 
-const progress = () => {
+const hideElement = (array, hideElem) => {
+  const arr = array;
+  arr[hideElem] = '..';
+  return arr;
+};
+
+const generateData = () => {
   const array = [];
   const step = Math.floor(Math.random() * (8 - 5) + 2);
   let num = Math.floor(Math.random() * (50 - 5) + 5);
-  const hideElem = Math.floor(Math.random() * 10);
+  const hideElem = randomNum(10);
 
   for (let i = 0; i < 10; i += 1) {
     array[i] = num;
     num += step;
   }
   const result = array[hideElem];
-  array[hideElem] = '..';
-  console.log(`Question: ${array.join(' ')}`);
+  const hideArr = hideElement(array, hideElem);
+  console.log(`Question: ${hideArr.join(' ')}`);
 
   return result;
 };
 
-const progression = () => game1(rules, progress);
-
-export default progression;
+export { rules, generateData };

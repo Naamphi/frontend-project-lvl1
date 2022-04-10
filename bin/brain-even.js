@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import evenNum from '../src/games/even.js';
+import { rules, generateData } from '../src/games/even.js';
+import engine from '../src/index.js';
 
-evenNum();
+engine(rules, generateData);

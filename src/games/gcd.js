@@ -1,12 +1,8 @@
-import game1 from '../index.js';
+import randomNum from '../utils.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
-const gcd = () => {
-  const a = Math.floor(Math.random() * 100);
-  const b = Math.floor(Math.random() * 100);
-  console.log(`Question: ${a} ${b}`);
-
+const gcd = (a, b) => {
   let i = a;
   while (a % i !== 0 || b % i !== 0) {
     i -= 1;
@@ -14,6 +10,11 @@ const gcd = () => {
   return i;
 };
 
-const divisor = () => game1(rules, gcd);
+const generateData = () => {
+  const a = randomNum(100);
+  const b = randomNum(100);
+  console.log(`Question: ${a} ${b}`);
+  return gcd(a, b);
+};
 
-export default divisor;
+export { rules, generateData };

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import divisor from '../src/games/gcd.js';
+import { rules, generateData } from '../src/games/gcd.js';
+import engine from '../src/index.js';
 
-divisor();
+engine(rules, generateData);

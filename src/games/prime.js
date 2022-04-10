@@ -1,12 +1,9 @@
-import game1 from '../index.js';
+import randomNum from '../utils.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const prime = () => {
+const isPrime = (number) => {
   let result = '';
-  const number = Math.floor(Math.random() * 50);
-  console.log(`Question: ${number}`);
-
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
       result = 'no';
@@ -16,6 +13,10 @@ const prime = () => {
   return result;
 };
 
-const isPrime = () => game1(rules, prime);
+const generateData = () => {
+  const number = randomNum(50);
+  console.log(`Question: ${number}`);
+  return isPrime(number);
+};
 
-export default isPrime;
+export { rules, generateData };

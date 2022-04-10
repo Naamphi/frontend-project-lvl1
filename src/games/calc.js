@@ -1,21 +1,15 @@
-import game1 from '../index.js';
+import randomNum from '../utils.js';
 
 const rules = 'What is the result of the expression?';
 
-const calc = () => {
-  const arrayChars = ['+', '-', '*'];
-  const chars = arrayChars[Math.floor(Math.random() * 3)];
-  const Num1 = Math.floor(Math.random() * 100);
-  const Num2 = Math.floor(Math.random() * 50);
+const calc = (char, Num1, Num2, operators) => {
   let result = '';
-  console.log(`Question: ${Num1} ${chars} ${Num2}`);
-
-  switch (chars) {
-    case '+':
-      result = Num1 + Num2;
-      break;
+  switch (operators[char]) {
     case '-':
       result = Num1 - Num2;
+      break;
+    case '+':
+      result = Num1 + Num2;
       break;
     case '*':
       result = Num1 * Num2;
@@ -25,6 +19,13 @@ const calc = () => {
   return result;
 };
 
-const calculator = () => game1(rules, calc);
+const generateData = () => {
+  const char = randomNum(3);
+  const Num1 = randomNum(100);
+  const Num2 = randomNum(50);
+  const operators = ['+', '-', '*'];
+  console.log(`Question: ${Num1} ${operators[char]} ${Num2}`);
+  return calc(char, Num1, Num2, operators);
+};
 
-export default calculator;
+export { rules, generateData };

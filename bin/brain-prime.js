@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import isPrime from '../src/games/prime.js';
+import { rules, generateData } from '../src/games/prime.js';
+import engine from '../src/index.js';
 
-isPrime();
+engine(rules, generateData);
