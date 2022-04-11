@@ -1,3 +1,4 @@
+import engine from '../index.js';
 import randomNum from '../utils.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -20,4 +21,6 @@ const generateData = () => {
   return isPrime(number);
 };
 
-export { rules, generateData };
+const Prime = () => engine(rules, generateData);
+
+export default Prime;

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { rules, generateData } from '../src/games/calc.js';
-import engine from '../src/index.js';
+import calculator from '../src/games/calc.js';
 
-engine(rules, generateData);
+calculator();

@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
+const rounds = 3;
+
 const engine = (rules, round) => {
-  const rounds = 3;
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);

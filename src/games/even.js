@@ -1,3 +1,4 @@
+import engine from '../index.js';
 import randomNum from '../utils.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -13,4 +14,6 @@ const generateData = () => {
   return even(number);
 };
 
-export { rules, generateData };
+const evenGame = () => engine(rules, generateData);
+
+export default evenGame;
