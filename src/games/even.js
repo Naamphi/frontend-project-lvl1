@@ -6,9 +6,9 @@ const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (number) => number % 2 === 0;
 
 const generateData = () => {
-  const number = randomNum(103);
-  const answer = isEven(number) ? 'yes' : 'no';
-  console.log(`Question: ${number}`);
+  const num = randomNum(103);
+  const answer = isEven(num) ? 'yes' : 'no';
+  console.log(`Question: ${num}`);
   return answer;
 };
 

@@ -17,9 +17,9 @@ const isPrime = (number) => {
 
 const generateData = () => {
   const number = randomNum(103);
-  const answer = isPrime(number) ? 'yes' : 'no';
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
   console.log(`Question: ${number}`);
-  return answer;
+  return correctAnswer;
 };
 
 const Prime = () => engine(rules, generateData);
