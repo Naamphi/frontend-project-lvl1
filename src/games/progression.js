@@ -3,29 +3,27 @@ import randomNum from '../utils.js';
 
 const rules = 'What number is missing in the progression?';
 
-const hideElement = (array, hideElem) => {
-  const arr = array;
-  arr[hideElem] = '..';
-  return arr;
+const getQuestion = (start, step, progressionLength) => {
+  const progression = [];
+
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(start + step * i);
+  }
+  return progression;
 };
 
 const progressionLength = 10;
 
 const generateData = () => {
-  const array = [];
-  const step = Math.floor(Math.random() * (8 - 5) + 2);
-  let num = Math.floor(Math.random() * (50 - 5) + 5);
-  const hideElem = randomNum(10);
+  const num = Math.floor(Math.random() * (50 - 5) + 5);
+  const step = Math.floor(Math.random() * (10 - 5) + 2);
+  const unkownNum = randomNum(10);
+  const progression = getQuestion(num, step, progressionLength);
+  const answer = String(progression[unkownNum]);
+  progression[unkownNum] = '..';
+  console.log(`Question: ${progression.join(' ')}`);
 
-  for (let i = 0; i < progressionLength; i += 1) {
-    array[i] = num;
-    num += step;
-  }
-  const result = array[hideElem];
-  const hideArr = hideElement(array, hideElem);
-  console.log(`Question: ${hideArr.join(' ')}`);
-
-  return result;
+  return answer;
 };
 
 const progression = () => engine(rules, generateData);

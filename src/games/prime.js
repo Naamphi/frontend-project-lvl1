@@ -7,7 +7,7 @@ const isPrime = (number) => {
   if (number < 2) {
     return 'no';
   }
-  for (let i = 2; i < number; i += 1) {
+  for (let i = 2; i <= number; i += 1) {
     if (number % i === 0) {
       return 'no';
     }
@@ -17,8 +17,9 @@ const isPrime = (number) => {
 
 const generateData = () => {
   const number = randomNum(50);
+  const answer = isPrime(number) ? 'yes' : 'no';
   console.log(`Question: ${number}`);
-  return isPrime(number);
+  return answer;
 };
 
 const Prime = () => engine(rules, generateData);
